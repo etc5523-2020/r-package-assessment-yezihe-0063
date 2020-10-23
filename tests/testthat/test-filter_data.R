@@ -4,6 +4,6 @@ test_that("filter_data()", {
                 dplyr::filter(country == "Australia",
                         type %in% c("confirmed","deaths")))
 
-  expect_error(filter_table(covid19_time, "Australia"))
-  expect_error(filter_table(covid19_time, c("confirmed","deaths")))
+  expect_error(filter_data(covid19_time, "Australia"))
+  expect_error(filter_data(covid19_time, c("confirmed","deaths")))
 })
