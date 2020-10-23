@@ -73,30 +73,46 @@
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#covidtrack" class="anchor"></a>covidtrack</h1></div>
 <!-- badges: start -->
-<!-- badges: end -->
+
 <p>The goal of covidtrack is to export a Shiny App to show the COVID-19 cases and community mobility changes due to the pandemic.</p>
+<div id="overview" class="section level2">
+<h2 class="hasAnchor">
+<a href="#overview" class="anchor"></a>Overview</h2>
+<p><code>covidtrack</code> package is aimed to create a shiny app to track the COVID-19 cases and community mobility changes.</p>
+<p>The <strong>The Spread of COVID-19</strong> collects coronavirus cases from all countries in the world, including confirmed cases, reported deaths and recovered cases. You can filter the countries you want to observe through the selection bar on the left, as well as the statistics.</p>
+<p>The <strong>Map</strong> section provides a world map. By moving the mouse to the country, it will show you the country name and the cumulative number of confirmed cases so far. Due to the large amount of data, this may take a while.</p>
+<p><strong>Community Mobility Changes</strong> shows movement trends across different categories of places, and you can also filter countries through the options on the left.</p>
+</div>
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<!-- You can install the released version of covidtrack from [CRAN](https://CRAN.R-project.org) with: -->
-<!-- ``` r -->
-<!-- install.packages("covidtrack") -->
-<!-- ``` -->
-<p>The development version from <a href="https://github.com/etc5523-2020/r-package-assessment-yezihe-0063">GitHub</a> with:</p>
+<p>You can install the covidtrack package from <a href="https://github.com/etc5523-2020/r-package-assessment-yezihe-0063">GitHub</a> with:</p>
 <div class="sourceCode" id="cb1"><pre class="downlit">
 <span class="co"># install.packages("devtools")</span>
 <span class="fu">devtools</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"etc5523-2020/r-package-assessment-yezihe-0063"</span><span class="op">)</span></pre></div>
 </div>
-<div id="example" class="section level2">
+<div id="launching-shiny-dashboard" class="section level2">
 <h2 class="hasAnchor">
-<a href="#example" class="anchor"></a>Example</h2>
-<p>This is a basic example which shows you how to solve a common problem:</p>
+<a href="#launching-shiny-dashboard" class="anchor"></a>Launching Shiny Dashboard</h2>
+<p>The applicaiton can be launched by using the following line of code:</p>
 <div class="sourceCode" id="cb2"><pre class="downlit">
 <span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/etc5523-2020/r-package-assessment-yezihe-0063">covidtrack</a></span><span class="op">)</span>
-<span class="co">#&gt; Loading required package: shiny</span>
-<span class="co">## basic example code</span></pre></div>
-<p>What is special about using <code>README.Rmd</code> instead of just <code>README.md</code>? You can include R chunks like so:</p>
-<p>You’ll still need to render <code>README.Rmd</code> regularly, to keep <code>README.md</code> up-to-date.</p>
+<span class="fu"><a href="reference/launch_app.html">launch_app</a></span><span class="op">(</span><span class="op">)</span></pre></div>
+<p>Besides, there are two more functions inside the package:</p>
+<ul>
+<li>
+<code>filter_data</code> To filter data by countries and cases types.</li>
+<li>
+<code>select_country</code> To construct an interface to select a country and types.</li>
+</ul>
+</div>
+<div id="data-resources" class="section level2">
+<h2 class="hasAnchor">
+<a href="#data-resources" class="anchor"></a>Data Resources</h2>
+<ul>
+<li><p>The raw data pulled from the Johns Hopkins University Center for Systems Science and Engineering (JHU CCSE) Coronavirus <a href="https://github.com/CSSEGISandData/COVID-19">repository</a>.</p></li>
+<li><p>Community Mobility Changes data comes from <a href="https://www.google.com/covid19/mobility/">Google</a></p></li>
+</ul>
 </div>
 </div>
   </div>
@@ -125,7 +141,14 @@
 </ul>
 </div>
 
-  </div>
+  <div class="dev-status">
+<h2>Dev status</h2>
+<ul class="list-unstyled">
+<li><a href="https://github.com/etc5523-2020/r-package-assessment-yezihe-0063/actions"><img src="https://github.com/etc5523-2020/r-package-assessment-yezihe-0063/workflows/R-CMD-check/badge.svg" alt="R build status"></a></li>
+<li><a href="https://www.gnu.org/licenses/gpl-3.0"><img src="https://img.shields.io/badge/License-GPLv3-blue.svg" alt="License: GPL v3"></a></li>
+</ul>
+</div>
+</div>
 </div>
 
 
