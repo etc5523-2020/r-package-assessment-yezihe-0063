@@ -43,7 +43,7 @@ devtools::install_github("etc5523-2020/r-package-assessment-yezihe-0063")
 ```
 
 ## Launching Shiny Dashboard
-The applicaiton can be launched by using the following line of code:
+The applicaton can be launched by using the following line of code:
 
 ```r
 library(covidtrack)
