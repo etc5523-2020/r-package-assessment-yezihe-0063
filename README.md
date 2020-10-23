@@ -12,14 +12,15 @@ cases and community mobility changes due to the pandemic.
 
 ## Installation
 
-You can install the released version of covidtrack from
-[CRAN](https://CRAN.R-project.org) with:
+<!-- You can install the released version of covidtrack from [CRAN](https://CRAN.R-project.org) with: -->
 
-``` r
-install.packages("covidtrack")
-```
+<!-- ``` r -->
 
-And the development version from
+<!-- install.packages("covidtrack") -->
+
+<!-- ``` -->
+
+The development version from
 [GitHub](https://github.com/etc5523-2020/r-package-assessment-yezihe-0063)
 with:
 
@@ -34,6 +35,7 @@ This is a basic example which shows you how to solve a common problem:
 
 ``` r
 library(covidtrack)
+#> Loading required package: shiny
 ## basic example code
 ```
 

@@ -22,13 +22,13 @@ The goal of covidtrack is to export a Shiny App to show the COVID-19 cases and c
 
 ## Installation
 
-You can install the released version of covidtrack from [CRAN](https://CRAN.R-project.org) with:
+<!-- You can install the released version of covidtrack from [CRAN](https://CRAN.R-project.org) with: -->
 
-``` r
-install.packages("covidtrack")
-```
+<!-- ``` r -->
+<!-- install.packages("covidtrack") -->
+<!-- ``` -->
 
-And the development version from [GitHub](https://github.com/etc5523-2020/r-package-assessment-yezihe-0063) with:
+The development version from [GitHub](https://github.com/etc5523-2020/r-package-assessment-yezihe-0063) with:
 
 ``` r
 # install.packages("devtools")
