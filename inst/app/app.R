@@ -77,7 +77,7 @@ server <- function(input, output, session) {
 
         p2 <- plot_geo(covid19_cumulative_case) %>%
             add_trace(
-            z = ~cases, color = ~cases, colors = 'Blues',
+            z = ~cum_cases, color = ~cum_cases, colors = 'Blues',
             text = ~country, locations = ~iso3c, marker = list(line = l))%>%
             colorbar(title = 'Cumulative Cases') %>%
             layout(
